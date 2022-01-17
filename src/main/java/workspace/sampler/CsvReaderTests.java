@@ -13,7 +13,7 @@ import java.util.Date;
 import java.util.List;
 
 public class CsvReaderTests {
-    private static List<TestDetails> readTestsFromCSV(String fileName) {
+    public static List<TestDetails> readTestsFromCSV(String fileName) {
         List<TestDetails> tests = new ArrayList<>();
         Path pathToFile = Paths.get(fileName);
         try (BufferedReader br = Files.newBufferedReader(pathToFile, StandardCharsets.US_ASCII)) {
