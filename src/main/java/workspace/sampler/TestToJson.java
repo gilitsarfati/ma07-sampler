@@ -17,7 +17,7 @@ public class TestToJson implements ObjectToJson{
     @Override
     public void convertObjToJson() throws IOException {
         CsvReaderTests csvReaderTests = new CsvReaderTests();
-        List<TestDetails> testsList = csvReaderTests.readTestsFromCSV("MadaReports.csv");
+        List<TestDetails> testsList = csvReaderTests.read("MadaReports.csv");
         ObjectMapper objectMapper = new ObjectMapper();
         objectMapper.enable(SerializationFeature.INDENT_OUTPUT);
         int size = testsList.size();
@@ -36,7 +36,6 @@ public class TestToJson implements ObjectToJson{
                 }
                 a += 50000;
                 objectMapper.writeValue(new File("MadaReports"+ j + ".json"), json);
-                //file.write(json.toJSONString());
             }
             else{
                 for (int i = 0; i < (size - a); i++) {
