@@ -1,18 +1,15 @@
 package workspace.sampler;
 
-import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.SerializationFeature;
 
 import java.io.File;
-import java.io.FileWriter;
 import java.io.IOException;
 import java.util.List;
 
-import org.json.JSONException;
 import org.json.simple.JSONObject;
 
-public class TestToJson implements ObjectToJson{
+public class TestsListToJson implements ObjectToJson{
 
     @Override
     public void convertObjToJson() throws IOException {

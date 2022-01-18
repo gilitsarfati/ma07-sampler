@@ -117,12 +117,12 @@ public class TestDetails {
         this.resultDate = resultDate;
     }
 
-    public TestDetails(int mdaCode, int IDNum, IDTypes idType, String firstName,
+    public TestDetails(int mdaCode, int IDNum, int idType, String firstName,
                        String lastName, String city, String street, int buildingNumber,
                        String barcode, Date getDate, Date takeDate, Date resultDate) {
         this.mdaCode = mdaCode;
         this.idNum = IDNum;
-        this.idType = idType;
+        this.idType.value = idType;
         this.firstName = firstName;
         this.lastName = lastName;
         this.city = city;

@@ -38,7 +38,7 @@ public class CsvReaderTests implements CsvReader {
     private static TestDetails createTest(String[] metadata) throws ParseException {
         int mdaCode = Integer.parseInt(metadata[0]);
         int idNum = Integer.parseInt(metadata[1]);
-        IDTypes idType = IDTypes.valueOf(metadata[2]);
+        int idType = Integer.parseInt(metadata[2]);
         String firstName = metadata[3];
         String lastName = metadata[4];
         String city = metadata[5];
